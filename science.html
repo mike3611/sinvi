@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科展即時監控中心</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", sans-serif; background-color: #eef2f5; margin: 0; padding: 20px; text-align: center; }
+        h1 { color: #2c3e50; margin-bottom: 30px; }
+        .dashboard { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .chart-box { background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; border-top: 5px solid #3498db; }
+        h3 { color: #34495e; margin-top: 0; }
+        .footer { margin-top: 30px; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 科展實驗：多感測器即時監測系統</h1>
+
+    <div class="dashboard">
+        <div class="chart-box">
+            <h3>💧 DS18B20 溫度數據</h3>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2684605/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+
+        <div class="chart-box">
+            <h3>🔥 MAX6675 高溫數據</h3>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2880713/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+
+        <div class="chart-box">
+            <h3>☁️ 空氣品質監測</h3>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3177535/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>數據每 15 秒自動更新一次 | 創客精神：動手做，科學探究真有趣！</p>
+    </div>
+
+</body>
+</html>

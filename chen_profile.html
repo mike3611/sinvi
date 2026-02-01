@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>陳俊青 | 個人介紹</title>
+    <meta name="description" content="陳俊青 — 個人簡介、經歷與聯絡方式">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="name">陳俊青</h1>
+            <p class="tagline">設計師 · 前端工程師 · 問題解決者</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <img class="avatar" src="https://via.placeholder.com/300x300.png?text=%E9%99%B3%E4%BF%8A%E9%9D%92"
+                alt="陳俊青 照片">
+            <div class="hero-text">
+                <h2>關於我</h2>
+                <p>嗨，我是陳俊青，一位熱愛設計與前端開發的專業人士。我熱衷於創造直觀且有影響力的使用者經驗，並擅長將視覺設計與可維護程式碼結合。</p>
+                <p>目前專注於：Web 應用、互動式介面與使用者研究。</p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h3>經歷</h3>
+                <ul>
+                    <li>2022–現在：某科技公司 — 前端工程師</li>
+                    <li>2019–2022：設計工作室 — UI/UX 設計師</li>
+                    <li>2016–2019：自由接案 — 網站與品牌設計</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>技能</h3>
+                <ul class="skills">
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>React / Vue</li>
+                    <li>UI/UX 設計 / Figma</li>
+                    <li>響應式設計 / 可存取性</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>聯絡</h3>
+                <p>電子郵件：<a href="mailto:chen@example.com">chen@example.com</a></p>
+                <p>更多：<a href="#">下載履歷</a></p>
+            </article>
+        </section>
+
+        <section class="projects">
+            <h3>代表作品</h3>
+            <div class="project-grid">
+                <div class="project">網站設計 A</div>
+                <div class="project">互動作品 B</div>
+                <div class="project">前端專案 C</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> 陳俊青 — 版權所有</div>
+    </footer>
+
+    <script>
+        // 自動更新年份
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
