@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校務評鑑成果展示 - 嘉義縣阿里山鄉新美國小</title>
+    <style>
+        :root {
+            --primary-color: #7A4A31; /* 深木頭色 */
+            --secondary-color: #D4A373; /* 暖沙色 */
+            --bg-color: #FDF8F3; /* 溫暖米白 */
+            --text-color: #3E362E;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* 圖片容器：背景設為黑色以符合您提供的截圖樣式，且圖片不放大 */
+        .hero-wrapper {
+            background-color: #1a1a1a;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-img {
+            max-width: 100%; /* 確保寬度不超過螢幕 */
+            height: auto;    /* 保持原始比例 */
+            display: block;
+        }
+
+        /* 標題區塊 */
+        .brand-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #F2E3D5, var(--bg-color));
+        }
+
+        .brand-section h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        .brand-section p {
+            margin: 15px 0 0;
+            color: #6B5E54;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        /* 內容區 */
+        .main-content {
+            max-width: 1100px;
+            margin: -30px auto 80px auto;
+            padding: 0 20px;
+        }
+
+        .white-card {
+            background: #FFFFFF;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: flex-end; /* 依照截圖將標題置右 */
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 8px;
+        }
+
+        /* 連結卡片佈局 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .portal-card {
+            border: 1px solid #E9E0D6;
+            border-radius: 10px;
+            padding: 30px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 150px;
+        }
+
+        .portal-card:hover {
+            background-color: #FFFBF7;
+            border-color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(122, 74, 49, 0.1);
+        }
+
+        .portal-card h3 {
+            margin: 0 0 12px 0;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+
+        .portal-card p {
+            margin: 0;
+            font-size: 1rem;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding-bottom: 50px;
+            color: #A0968D;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .brand-section h1 { font-size: 1.8rem; }
+            .white-card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-wrapper">
+        <img src="https://www.shmps.cyc.edu.tw/uploads/tad_themes/school2019/slide/slide_38_6_FId.jpg" alt="新美國小首頁圖" class="hero-img">
+    </div>
+
+    <section class="brand-section">
+        <h1>嘉義縣新美國小</h1>
+        <p>校務評鑑成果展示網</p>
+    </section>
+
+    <div class="main-content">
+        <div class="white-card">
+            <div class="section-header">
+                <div class="section-title">評鑑佐證與社群連結</div>
+            </div>
+            
+            <div class="grid-container">
+                <a href="https://www.facebook.com/cycshmpsindigenous/?ref=embed_page#" target="_blank" class="portal-card">
+                    <h3>原住民資源中心</h3>
+                    <p>傳承鄒族文化特色<br>深耕原鄉教育成果</p>
+                </a>
+
+                <a href="https://www.facebook.com/cycshmps/?ref=embed_page#" target="_blank" class="portal-card">
+                    <h3>新美國小粉絲專頁</h3>
+                    <p>紀錄校園生活點滴<br>親師生互動零距離</p>
+                </a>
+
+                <a href="https://www.youtube.com/@cycsinvi/playlists" target="_blank" class="portal-card">
+                    <h3>影音成果播放清單</h3>
+                    <p>動態影像紀錄彙整<br>直擊教學與活動現場</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 嘉義縣阿里山鄉新美國小 版權所有
+    </footer>
+
+</body>
+</html>
